@@ -20,14 +20,16 @@
          function resizeCanvas() {
         var canvas = document.getElementById('unity-canvas');
         var width = window.innerWidth;
-        var height = window.innerHeight;
+  var height = window.innerHeight;
+  var devicePixelRatio = window.devicePixelRatio || 1;  // Handle high DPI devices
 
-        // Đặt kích thước canvas bằng kích thước cửa sổ hiện tại
-        canvas.width = width;
-        canvas.height = height;
+  // Adjust canvas size for device pixel ratio
+  canvas.width = width * devicePixelRatio;
+  canvas.height = height * devicePixelRatio;
 
-        canvas.style.width = width + 'px';
-        canvas.style.height = height + 'px';
+  // Set style dimensions to actual dimensions
+  canvas.style.width = width + 'px';
+  canvas.style.height = height + 'px';
       }
 
       // Điều chỉnh lại khi cửa sổ thay đổi kích thước
