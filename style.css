@@ -1,0 +1,146 @@
+#game-controls button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#vocabulary-list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    /* Adjust width as needed */
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+}
+
+.vocabulary {
+    margin-bottom: 20px;
+}
+
+.vocabulary-scroll {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 80%;
+    overflow-y: scroll;
+    background-color: #f1f1f1;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button {
+    background-color: #4CAF50;
+    /* Màu nền */
+    border: none;
+    /* Không viền */
+    color: white;
+    /* Màu chữ */
+    padding: 15px 32px;
+    /* Kích thước nút */
+    text-align: center;
+    /* Căn giữa chữ */
+    text-decoration: none;
+    /* Không gạch chân */
+    display: inline-block;
+    /* Hiển thị như một khối mặc định */
+    font-size: 16px;
+    /* Cỡ chữ */
+    margin: 4px 2px;
+    /* Khoảng cách giữa các nút */
+    cursor: pointer;
+    /* Con trỏ chuột khi rê vào nút */
+    border-radius: 10px;
+    /* Bo tròn góc */
+    transition-duration: 0.4s;
+    /* Thời gian chuyển đổi */
+    font-weight: bold;
+    /* Đậm */
+    text-transform: capitalize;
+
+    /* Chuyển đổi văn bản thành chữ in hoa */
+}
+
+.text {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.custom-buttontext2 {
+    background-color: #415eef;
+    /* Màu nền */
+    border: none;
+    /* Không viền */
+    color: white;
+    /* Màu chữ */
+    padding: 10px 10px;
+    /* Kích thước nút */
+    text-align: center;
+    /* Căn giữa chữ */
+    text-decoration: none;
+    /* Không gạch chân */
+    display: inline-block;
+    /* Hiển thị như một khối mặc định */
+    font-size: 15px;
+    /* Cỡ chữ */
+    /* Khoảng cách giữa các nút */
+    cursor: pointer;
+    /* Con trỏ chuột khi rê vào nút */
+    border-radius: 10px;
+    /* Bo tròn góc */
+    transition-duration: 0.4s;
+    /* Thời gian chuyển đổi */
+    font-weight: bold;
+    /* Đậm */
+    text-transform: capitalize;
+    /* Chuyển đổi văn bản thành chữ in hoa */
+}
+
+.custom-buttontext {
+    background-color: #4CAF50;
+    /* Màu nền */
+    border: none;
+    /* Không viền */
+    color: white;
+    /* Màu chữ */
+    padding: 10px 10px;
+    /* Kích thước nút */
+    text-align: center;
+    /* Căn giữa chữ */
+    text-decoration: none;
+    /* Không gạch chân */
+    display: inline-block;
+    /* Hiển thị như một khối mặc định */
+    font-size: 15px;
+    /* Cỡ chữ */
+    /* Khoảng cách giữa các nút */
+    cursor: pointer;
+    /* Con trỏ chuột khi rê vào nút */
+    border-radius: 10px;
+    /* Bo tròn góc */
+    transition-duration: 0.4s;
+    /* Thời gian chuyển đổi */
+    font-weight: bold;
+    /* Đậm */
+    text-transform: capitalize;
+    /* Chuyển đổi văn bản thành chữ in hoa */
+}
+
+.custom-button:hover {
+    background-color: #45a049;
+    /* Màu nền khi hover */
+    color: white;
+    /* Màu chữ khi hover */
+}
+
+.vocabulary-scroll ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.vocabulary-scroll li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}

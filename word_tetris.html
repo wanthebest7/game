@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tetris Word</title>
+</head>
+
+<body>
+    <div id="game-controls">
+        <button class="custom-button" onclick="stopGame()">Stop</button>
+        <button class="custom-button" onclick="startGame()">Start</button>
+        <button class="custom-button" onclick="resetGame()">Reset</button>
+    </div>
+    <div id="vocabulary-list" class="vocabulary-scroll">
+        <h2 class="text">English - 한국인</h2>
+        <ul id="word-list">
+            <!-- Từ vựng sẽ được thêm vào đây -->
+        </ul>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.min.js"></script>
+    <script src="pieces.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
