@@ -404,11 +404,16 @@ class PlayPiece {
         // thêm từ mới
         const randomNumber1 = generateRandomUniqueNumber(0, 1000);
         addVocabulary2(randomNumber1, randomNumber1); // Add new vocabulary when a piece commits to the grid
-        stopGame()
+        stopGame();
+        speakText(Englishvoca[randomNumber1]);
+
         setTimeout(function () {
             // Code để thực thi sau khi delay
-            startGame()
+            speakText2(KoreanVoca[randomNumber1]);
         }, 2000);
+        setTimeout(function () {
+            startGame()
+        }, 3000);
         this.resetPiece();
         analyzeGrid();
     }
