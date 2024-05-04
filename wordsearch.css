@@ -83,7 +83,7 @@ html {
 .words button {
     float: left;
     width: 200px;
-    height: 35px;
+    height: 30px;
     background: white;
     text-align: center;
     margin: 1px; /* Adds some space between the buttons */
@@ -110,7 +110,7 @@ html {
 .words2 button {
     float: left;
     width: 200px;
-    height: 35px;
+    height: 30px;
     background: white;
     text-align: center;
     margin: 1px; /* Adds some space between the buttons */
