@@ -92,7 +92,7 @@ html {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for 3D effect */
     transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for interactions */
     cursor: pointer; /* Indicates that the item is clickable */
-    font-size: 0.8em; /* Adaptable font size */
+    font-size: 0.5em; /* Adaptable font size */
     font-family: 'Arial', sans-serif; /* Improved font readability */
 }
 
@@ -102,7 +102,7 @@ html {
 }
 
 .words2 {
-	font-size: 0.8em;
+	font-size: 0.5em;
 	font-family: 'Fresca', serif;
 
 }
@@ -110,7 +110,7 @@ html {
 .words2 button {
     float: left;
     width: 200px;
-    height: 25px;
+    height: 20px;
     background: white;
     text-align: center;
     margin: 1px; /* Adds some space between the buttons */
@@ -119,7 +119,7 @@ html {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for 3D effect */
     transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for interactions */
     cursor: pointer; /* Indicates that the item is clickable */
-    font-size: 0.8em; /* Adaptable font size */
+    font-size: 0.5em; /* Adaptable font size */
     font-family: 'Arial', sans-serif; /* Improved font readability */
 }
 
