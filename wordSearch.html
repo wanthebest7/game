@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Search Game</title>
+    <link rel="stylesheet" type="text/css" href="./wordsearch.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div class="left">
+            <div class="letters">
+                <canvas id="a" width="800" height="800"></canvas>
+                <canvas id="c" width="800" height="800"></canvas>
+            </div>
+        </div>
+        <div class="right-container">  <!-- Container for right columns -->
+            <div class="right">
+                <div class="words">
+                    <h3>ENGLISH</h3>
+                    <br>
+                    <!-- Words will be added here by JavaScript -->
+                </div>
+            </div>
+            <div class="right">
+                <div class="words2">
+                    <h3>한국어</h3>
+                    <br>
+                    <!-- Words will be added here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./wordsearch.js"></script>
+</body>
+</html>

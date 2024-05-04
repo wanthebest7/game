@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+
+.right-container {
+    display: flex;
+    flex: 2;  /* Assigns 2 parts of the space to the right container */
+}
+
+.right {
+    flex: 1;  /* Each right column takes equal space within their container */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;  /* Optional background color */
+    border-left: 1px solid #ccc;  /* Optional border */
+}
+html {
+	height: 100%;
+	background: #999999;
+	background: linear-gradient(bottom, #fff 70%, #bbb 100%);
+	background-size: cover;
+}
+
+#main {
+	width: 70em;
+	height: 51em;
+	margin: 10px auto;
+	display: block;
+}
+
+.left {
+	float: left;
+	width: 820px;
+	height: auto;
+	border: 10px solid #9dd2ea;
+	border-radius: 3px;
+
+	box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+}
+
+.letters {
+	font-size: 1.3em;
+	font-family: 'Fresca', serif;
+}
+
+.letters span {
+	float:left;
+	width: 40px;
+	height: 40px;
+
+	background: white;
+	line-height: 43px;
+	text-align: center;
+
+	font-size: 1em;
+
+}
+
+/* .right {
+	float: right;
+	width: 220px;
+	height: auto;
+	border: 10px solid #9dd2ea;
+	border-radius: 3px;
+
+	box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+} */
+
+.words {
+	font-size: 1.3em;
+	font-family: 'Fresca', serif;
+
+}
+
+.words button {
+    float: left;
+    width: 200px;
+    height: 38px;
+    background: white;
+    text-align: center;
+    margin: 1px; /* Adds some space between the buttons */
+    border: none; /* Removes default borders */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for 3D effect */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for interactions */
+    cursor: pointer; /* Indicates that the item is clickable */
+    font-size: 1em; /* Adaptable font size */
+    font-family: 'Arial', sans-serif; /* Improved font readability */
+}
+
+.words button:hover {
+    background-color: #e6e6e6; /* Light grey background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.words2 {
+	font-size: 1.3em;
+	font-family: 'Fresca', serif;
+
+}
+
+.words2 button {
+    float: left;
+    width: 200px;
+    height: 38px;
+    background: white;
+    text-align: center;
+    margin: 1px; /* Adds some space between the buttons */
+    border: none; /* Removes default borders */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for 3D effect */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for interactions */
+    cursor: pointer; /* Indicates that the item is clickable */
+    font-size: 1em; /* Adaptable font size */
+    font-family: 'Arial', sans-serif; /* Improved font readability */
+}
+
+.words2 button:hover {
+    background-color: #e6e6e6; /* Light grey background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+
+.blur {
+	color: transparent;
+   	text-shadow: 0 0 6px rgba(0,0,0,0.7);
+}
+
+.strike {
+  text-decoration: line-through;
+  font-weight: bold;
+  color: #28a745; 
+}
+
+canvas {
+	position: absolute;
+	display: block;
+	float: left;
+
+}
