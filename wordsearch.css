@@ -7,120 +7,59 @@
 
 
 .right-container {
-	display: flex;
-	flex: 2;
-	/* Assigns 2 parts of the space to the right container */
+    display: flex;
+    flex: 2;  /* Assigns 2 parts of the space to the right container */
 }
 
 .right {
-	flex: 1;
-	/* Each right column takes equal space within their container */
-	padding: 10px;
-	box-sizing: border-box;
-	background-color: #f4f4f4;
-	/* Optional background color */
-	border-left: 1px solid #ccc;
-	/* Optional border */
+    flex: 1;  /* Each right column takes equal space within their container */
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;  /* Optional background color */
+    border-left: 1px solid #ccc;  /* Optional border */
 }
-
 html {
-<<<<<<< HEAD
-	height: 80%;
-	/* Giảm 20% chiều cao */
+	height: 100%;
 	background: #999999;
-	background: linear-gradient(bottom, #fff 56%, #bbb 80%);
-	/* Giảm 20% vị trí của gradient */
+	background: linear-gradient(bottom, #fff 70%, #bbb 100%);
 	background-size: cover;
 }
 
 #main {
-	width: 56em;
-	/* Giảm 20% chiều rộng */
-	height: 40.8em;
-	/* Giảm 20% chiều cao */
-	margin: 8px auto;
-	/* Giảm 20% margin */
+	width: 70em;
+	height: 51em;
+	margin: 10px auto;
 	display: block;
 }
 
 .left {
 	float: left;
-	width: 656px;
-	/* Giảm 20% chiều rộng */
+	width: 820px;
 	height: auto;
-	border: 8px solid #9dd2ea;
-	/* Giảm 20% độ dày border */
-	border-radius: 2.4px;
-	/* Giảm 20% độ cong của border */
+	border: 10px solid #9dd2ea;
+	border-radius: 3px;
 
-	box-shadow: 0 8px 4.8px -4.8px rgba(0, 0, 0, 0.5);
-	/* Giảm 20% độ sâu của shadow */
-	-moz-box-shadow: 0 8px 4.8px -4.8px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 8px 4.8px -4.8px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
 }
 
 .letters {
-	font-size: 1.04em;
-	/* Giảm 20% kích thước font */
+	font-size: 1.3em;
 	font-family: 'Fresca', serif;
 }
 
 .letters span {
-	float: left;
-	width: 32px;
-	/* Giảm 20% chiều rộng */
-	height: 32px;
-	/* Giảm 20% chiều cao */
+	float:left;
+	width: 40px;
+	height: 40px;
 
 	background: white;
-	line-height: 34.4px;
-	/* Giảm 20% line-height */
+	line-height: 43px;
 	text-align: center;
 
-	font-size: 0.8em;
-	/* Giảm 20% kích thước font */
-=======
-    height: 80%; /* Giảm 20% chiều cao */
-    background: #999999;
-    background: linear-gradient(bottom, #fff 56%, #bbb 80%); /* Giảm 20% vị trí của gradient */
-    background-size: cover;
-}
+	font-size: 1em;
 
-#main {
-    width: 56em; /* Giảm 20% chiều rộng */
-    height: 40.8em; /* Giảm 20% chiều cao */
-    margin: 8px auto; /* Giảm 20% margin */
-    display: block;
-}
-
-.left {
-    float: left;
-    width: 656px; /* Giảm 20% chiều rộng */
-    height: auto;
-    border: 8px solid #9dd2ea; /* Giảm 20% độ dày border */
-    border-radius: 2.4px; /* Giảm 20% độ cong của border */
-
-    box-shadow: 0 8px 4.8px -4.8px rgba(0,0,0,0.5); /* Giảm 20% độ sâu của shadow */
-    -moz-box-shadow: 0 8px 4.8px -4.8px rgba(0,0,0,0.5);
-    -webkit-box-shadow: 0 8px 4.8px -4.8px rgba(0,0,0,0.5);
-}
-
-.letters {
-    font-size: 1.04em; /* Giảm 20% kích thước font */
-    font-family: 'Fresca', serif;
-}
-
-.letters span {
-    float: left;
-    width: 32px; /* Giảm 20% chiều rộng */
-    height: 32px; /* Giảm 20% chiều cao */
-
-    background: white;
-    line-height: 34.4px; /* Giảm 20% line-height */
-    text-align: center;
-
-    font-size: 0.8em; /* Giảm 20% kích thước font */
->>>>>>> 1051f3390b0a98863af062694a056f1a226abff7
 }
 
 /* .right {
@@ -136,42 +75,15 @@ html {
 } */
 
 .words {
-<<<<<<< HEAD
-	font-size: 0.8em;
-=======
-	font-size: 1em;
->>>>>>> 1051f3390b0a98863af062694a056f1a226abff7
+	font-size: 1.3em;
 	font-family: 'Fresca', serif;
 
 }
 
 .words button {
-<<<<<<< HEAD
-	float: left;
-	width: 200px;
-	height: 28px;
-	background: white;
-	text-align: center;
-	margin: 1px;
-	/* Adds some space between the buttons */
-	border: none;
-	/* Removes default borders */
-	border-radius: 5px;
-	/* Rounded corners for a softer look */
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	/* Subtle shadow for 3D effect */
-	transition: background-color 0.3s, transform 0.2s;
-	/* Smooth transitions for interactions */
-	cursor: pointer;
-	/* Indicates that the item is clickable */
-	font-size: 0.8em;
-	/* Adaptable font size */
-	font-family: 'Arial', sans-serif;
-	/* Improved font readability */
-=======
     float: left;
     width: 200px;
-    height: 35px;
+    height: 38px;
     background: white;
     text-align: center;
     margin: 1px; /* Adds some space between the buttons */
@@ -182,53 +94,23 @@ html {
     cursor: pointer; /* Indicates that the item is clickable */
     font-size: 1em; /* Adaptable font size */
     font-family: 'Arial', sans-serif; /* Improved font readability */
->>>>>>> 1051f3390b0a98863af062694a056f1a226abff7
 }
 
 .words button:hover {
-	background-color: #e6e6e6;
-	/* Light grey background on hover */
-	transform: translateY(-2px);
-	/* Slight lift effect on hover */
+    background-color: #e6e6e6; /* Light grey background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
 .words2 {
-<<<<<<< HEAD
-	font-size: 0.8em;
-=======
-	font-size: 1em;
->>>>>>> 1051f3390b0a98863af062694a056f1a226abff7
+	font-size: 1.3em;
 	font-family: 'Fresca', serif;
 
 }
 
 .words2 button {
-<<<<<<< HEAD
-	float: left;
-	width: 200px;
-	height: 28px;
-	background: white;
-	text-align: center;
-	margin: 1px;
-	/* Adds some space between the buttons */
-	border: none;
-	/* Removes default borders */
-	border-radius: 5px;
-	/* Rounded corners for a softer look */
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-	/* Subtle shadow for 3D effect */
-	transition: background-color 0.3s, transform 0.2s;
-	/* Smooth transitions for interactions */
-	cursor: pointer;
-	/* Indicates that the item is clickable */
-	font-size: 0.8em;
-	/* Adaptable font size */
-	font-family: 'Arial', sans-serif;
-	/* Improved font readability */
-=======
     float: left;
     width: 200px;
-    height: 30px;
+    height: 38px;
     background: white;
     text-align: center;
     margin: 1px; /* Adds some space between the buttons */
@@ -239,26 +121,23 @@ html {
     cursor: pointer; /* Indicates that the item is clickable */
     font-size: 1em; /* Adaptable font size */
     font-family: 'Arial', sans-serif; /* Improved font readability */
->>>>>>> 1051f3390b0a98863af062694a056f1a226abff7
 }
 
 .words2 button:hover {
-	background-color: #e6e6e6;
-	/* Light grey background on hover */
-	transform: translateY(-2px);
-	/* Slight lift effect on hover */
+    background-color: #e6e6e6; /* Light grey background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
 }
 
 
 .blur {
 	color: transparent;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.7);
+   	text-shadow: 0 0 6px rgba(0,0,0,0.7);
 }
 
 .strike {
-	text-decoration: line-through;
-	font-weight: bold;
-	color: #28a745;
+  text-decoration: line-through;
+  font-weight: bold;
+  color: #28a745; 
 }
 
 canvas {
