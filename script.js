@@ -1,5 +1,5 @@
 // Define the size of each grid space
-const gridSpace = 30;
+const gridSpace = 24;
 const Englishvoca = [
     "property ", "enhance ", "hypothesis", "relaxed ", "handpicked ", "exaggerated", "so long as ", "renovate ", "long for ", "enclose ", "durable ", "atmosphere ", "application ", "commitment ", "concern ", "properly ", "disruption ", "promote ", "strive to do ", "relaxing ", "extension ", "connect with ", "replacement ", "deserve ", "residential ", "pandemic ", "dispose of ", "solid ", "crew ", "secured ", "sales representative ", "tub ", "oversized ", "regulation ", "burst ", "appreciate ", "tower ", "stillness ", "tremble ", "snap around ", "play a trick ", "ghostly ", "pound ", "glow ", "basement ", "dreadful ", "creep over ", "ball ", "fancy ", "carnival ", "stuck ", "crash into ", "overjoyed ", "triumphantly ", "bow ", "porch ", "yawn ", "dew ", "scent ", "drip ", "dim ", "slip away ", "exposure ", "run through ", "faith ", "mess up ", "run through ", "correct ", "in succession ", "worked up ", "give in ", "be a bundle of nerves ", "set oneself up for ", "regardless of ", "dedicated ", "industrious ", "productivity ", "priority ", "direct ", "linear ", "figurative ", "marginalize ", "miss out on ", "neurobiological ", "standpoint ", "recontextualize ", "previously ", "invisible ", "engage ", "mode ", "stimulate ", "association ", "neural ", "node ", "engagement ", "reimagine ", "exercise ", "fuel ", "temporary ", "restore ", "discipline ", "inherent ", "maladaptive ", "predatory ", "capitalism ", "monument ", "triumph ", "critical ", "thoughtless ", "secure ", "pretender to wisdom ", "shame ", "defeat ", "argument ", "literally ", "opponent ", "descendant ", "ownership ", "countersignalling ", "a point of honour ", "trainers ", "tech ", "status ", "atypical ", "regard ", "assistant ", "high end ", "rate ", "fur ", "relativity ", "fundamental ", "principle ", "make the point that ", "status ", "measure ", "relative to ", "analysis ", "extraordinary ", "reveal ", "disappointment ", "perceive ", "better off ", "automation ", "appeal to ", "eager ", "misguided ", "release ", "perceive ", "diminish ", "present ", "engagement ", "consist of ", "prescribed ", "analyst ", "restrict ", "turn into ", "routine ", "take over ", "time consuming ", "engage in ", "valid ", "eye opening ", "sound ", "anecdote ", "exaggeration ", "manipulate ", "navigator ", "preconceived ", "notion ", "curse ", "megadose ", "promote ", "cup of tea ", "abound ", "consequence ", "erase ", "impatient ", "crisis ", "mindful ", "negatively ", "affect ", "complicated ", "substantial ", "imbalance ", "premise ", "opponent ", "prompt ", "mess up ", "choke ", "thigh ", "current ", "severely ", "attachment ", "toss ", "downstream ", "uncontrollable ", "outcome ", "hopelessly ", "sociotechnical ", "expertise ", "disrupt ", "undertaking ", "statistics ", "existing ", "device ", "integrate ", "take   into account", "institution ", "artifact ", "keep in mind ", "politics ", "promote ", "intend ", "dusty ", "evolving ", "outdated ", "discipline ", "adapt to ", "speedometer ", "accelerate ", "keep pace with ", "presentation ", "matter ", "dress up ", "end up with ", "the vast majority of ", "analysis ", "devote ", "afterthought ", "essential ", "factor in ", "quality ", "accurate ", "conceptualization ", "obesity ", "epidemic ", "self control ", "metaphor ", "capture ", "stimulus ", "artificially ", "unintentionally ", "overconsume ", "excessively ", "societal ", "response ", "proportional ", "perceive ", "appropriate ", "expose ", "explicit ", "preference ", "bare bones ", "overlook ", "advocate ", "sufficiently ", "compelling ", "potential ", "attractiveness ", "self apparent ", "projection ", "return ", "thereby ", "alienate ", "distrust ", "deal making ", "resemble ", "venture capitalist ", "corporation ", "reward ", "budget ", "profit ", "radical ", "outcome ", "appetite ", "overdose ", "explicitly ", "implicitly ", "measurement ", "mute ", "optimally ", "deserted island ", "rub ", "emerge ", "vanish ", "immediately ", "activate ", "grant ", "option ", "limited ", "in accord with ", "violate ", "amused ", "assumption ", "longevity ", "reverse ", "life expectancy ", "symptom ", "prolong ", "accomplish ", "vanity ", "enormous ", "superficial ", "inefficient ", "glimpse ", "extend ", "unprecedented ", "alert ", "underway ", "miraculous ", "prediction ", "breakthrough ", "trigger ", "guarantee ", "humanitarian ", "legal ", "collaboration ", "ongoing ", "exploration ", "literally ", "concept ", "ecological ", "implication ", "inform ", "investigate ", "modification ", "advance ", "boundary ", "manipulate ", "genetic ", "make up ", "productivity ", "organism ", "purchase ", "section ", "crop up ", "trendy ", "subcontracted ", "offshoring ", "catch on ", "remarkable ", "enviable ", "conceive ", "domestically ", "deep learning ", "carry out ", "implications ", "analyst ", "bias ", "neural network ", "representation ", "reproduce ", "assumption ", "reflection ", "perception ", "precisely ", "fresh out of school ", "turn around ", "initiative ", "lose lose ", "school district ", "recognize ", "prior ", "take action ", "confidence ", "hinder ", "progress ", "inhibit ", "impose ", "boundary ", "intuitive ", "association ", "diagnosis ", "explicit ", "procedure ", "pin down ", "side effect ", "henceforth ", "collaboration ", "formalizable ", "affect ", "available ", "independent ", "committee ", "federal ", "publicly ", "respondent ", "occupation ", "mathematical ", "chemist ", "peak ", "surpass ", "share ", "transaction ", "dominate ", "exceed ", "forest area ", "account for ", "constitute ", "combine ", "estimate ", "scale ", "squid ", "octopus ", "fossil ", "fin ", "crawl ", "rotate ", "belly ", "electrical field ", "prey ", "location ", "reproduction ", "live young ", "diameter ", "develop ", "reproductive tract ", "apparently ", "commit oneself to ", "qualify ", "tailor ", "involved with ", "psychoanalytical ", "society ", "put on hold", "pioneering ", "authorities ", "emigrate ", "take up ", "professorship ", "illustrator ", "influential ", "artwork ", "illustration ", "entry ", "medium ", "contestant ", "retain ", "publication ", "vending machine ", "interactive ", "feed ", "nurturing ", "recommend ", "outfit ", "instruction ", "nap ", "rock ", "pose ", "safety hazard ", "intend for ", "renewal ", "ceremony ", "root crop ", "in attendance ", "extend ", "forehead ", "immigrant ", "ritual ", "priest ", "lay ", "enlightenment ", "paste ", "ash ", "clay ", "sect ", "horizontal ", "bisect ", "vertical ", "jewelry ", "come up with ", "appreciate ", "log ", "submit ", "rental ", "private ", "organization ", "reservation ", "fee ", "in advance ", "accept ", "register ", "cancellation ", "notice ", "no later than ", "prior to ", "refund ", "geared toward ", "remotely ", "registration ", "sign up for ", "repetition ", "acquire ", "effectively ", "relate ", "perspective ", "comparison ", "determine ", "feature ", "phenomenon ", "primary ", "prevention ", "occur ", "secondary ", "emphasize ", "identify ", "detect ", "treatment ", "outcome ", "curative ", "plentiful ", "prescribe ", "manage ", "significant ", "remedy ", "compensate ", "in proportion to ", "damages ", "assumption ", "correction ", "unintended ", "adoption ", "penalize ", "hypothetical ", "degrade ", "weaken ", "in good faith ", "architectural ", "billing rate ", "standpoint ", "agreement ", "charge ", "terms ", "checkbook ", "inefficient ", "bring   to the table", "negotiator ", "overestimate ", "bias ", "perception ", "normally ", "pay attention to ", "be conscious of ", "analogy ", "prehistoric ", "artifact ", "meteorite ", "accepted ", "populate ", "manufacture ", "construct ", "realization ", "in distinction to ", "current ", "neurological ", "transplantation ", "consist of ", "regenerate ", "relatively ", "procedure ", "explore ", "treatment ", "stroke ", "significant ", "proper ", "circuit ", "oppose ", "religious ", "philosophical ", "emerge ", "natural selection ", "primarily ", "implications ", "immense ", "evolve ", "artificial ", "civilization ", "by now ", "essentially ", "trivial ", "unsustainable ", "crash ", "soft landing ", "utopian ", "restriction ", "go along with ", "the Depression ", "federal government ", "explode ", "expand ", "formula ", "convince ", "prescription drug ", "govern ", "applied ", "uncover ", "concept ", "theory ", "stimulate ", "category ", "manipulate ", "arouse ", "considerable ", "criticism ", "demonstrate ", "effectiveness ", "critic ", "controllable ", "variable ", "fund ", "promote ", "establish ", "regional ", "committee ", "separation ", "breed ", "dialect ", "boundary ", "border ", "a stone’s throw ", "local ", "determine ", "globally ", "bathing costume ", "first and foremost ", "unsuitable ", "cognitively ", "take advantage of ", "insight ", "locational ", "reference ", "moral ", "component ", "elegance ", "festive ", "flexible ", "uphold ", "bourgeois ", "maintain ", "centrally ", "secondary ", "be predicated (up)on", "assumption ", "sacred ", "cornerstone ", "challenge ", "invalidate ", "dominance hierarchy ", "formalized ", "codified ", "dissolve ", "eliminate ", "self righteous ", "superiority ", "intelligentsia ", "intellectual ", "trace to ", "merchant ", "shoemaker ", "worldly ", "scholarly ", "injustice ", "remedy ", "trick ", "theft ", "norm ", "hold   in check", "temper ", "assault ", "aggressively ", "inhibit ", "continual ", "a stream of ", "more often than not ", "aggression ", "portray ", "alter ", "inhibition ", "gradual ", "wear down ", "ecologist ", "megaherbivore ", "rhinoceros", "hippopotamus", "massive ", "immune to ", "predator ", "vulnerable to ", "slow breeding ", "be doomed ", "prey ", "sustain ", "bag ", "let up ", "observation ", "factor ", "determine ", "stationary ", "apart from ", "turn on axis ", "on a daily basis ", "interpret ", "in the light of ", "theory ", "inadequate ", "self esteem ", "considerable ", "route ", "undeniable ", "immaturity ", "resolution ", "verbally ", "thereby ", "pro  ", "set the stage for ", "engaging ", "entertaining ", "identify ", "tightly ", "be at home in ", "sermon ", "monologue ", "feature story ", "lead ", "illustration ", "scattered ", "manuscript ", "insert ", "statistics ", "compelling ", "perceived ", "postindustrial ", "infrastructure ", "manipulation ", "paradoxical ", "displacement ", "concise ", "inevitable ", "visualize ", "exploit ", "consume ", "extensively ", "arguably ", "revolution ", "fluid ", "extra cellular ", "blood sugar level ", "liver ", "storage ", "provision ", "stimulate ", "inhibit ", "adjust ", "concentration ", "constant ", "go about ", "effortlessly ", "apparent ", "simplicity ", "illusion ", "vision ", "complicated ", "conscious mind ", "harvest ", "manufacture ", "container ", "interpretation ", "concern with ", "object ", "rocket science ", "overestimate ", "rate ", "in detail ", "revisit ", "subject ", "lower ", "rating ", "perform ", "sketch out ", "striking ", "phenomenon ", "illusion ", "explanatory ", "alter ", "disability ", "point out ", "constantly ", "sequence ", "sensory ", "orienting response ", "perceptual ", "shortening ", "attention span ", "novel ", "give in to ", "passive ", "analyze ", "evenly ", "distribute ", "put   aside", "direct ", "domestic ", "rarely ", "observe ", "pasture ", "gauge ", "display ", "aggressive ", "preferred ", "settle a score ", "counteract ", "boredom ", "dominance ", "dispute ", "conflict ", "result in ", "replacement ", "adjust ", "interpretation ", "stand for ", "equate ", "statement ", "immediate ", "cognitive ", "obvious ", "gravity ", "dominate ", "dynamics ", "overcome ", "resistance ", "descend ", "surrender ", "passive ", "compliance ", "unevenness ", "location ", "dynamically ", "potential energy ", "mass ", "vertical ", "obtain ", "experimental ", "demonstration ", "with regard to ", "mention ", "invariably ", "convince oneself that ", "navigate ", "sail ", "crew ", "significant ", "decent ", "determine ", "precisely ", "essential ", "reflection ", "graphically ", "representation ", "shoreline ", "wording ", "neutral ", "tailor ", "personality ", "tutor ", "be reluctant to do ", "contribution ", "face threatening ", "confidence ", "supportive ", "empathic ", "ambitious ", "artificial ", "adaptation ", "prejudice ", "inform ", "unjust ", "discrimination ", "acknowledge ", "hostile ", "solely ", "merit ", "pose ", "threatening ", "intent ", "subjected to ", "apparently ", "translate into ", "prospects ", "concept ", "precisely ", "millennium ", "publicly ", "in decline ", "conversely ", "digitization ", "convert ", "format ", "advanced ", "distribution ", "innovation ", "contain ", "intent ", "encode ", "cue ", "dynamic ", "above chance", "refine ", "patron ", "intention ", "appreciate ", "isolated ", "reaction ", "take pains ", "concerning ", "framing ", "presentation ", "for the benefit of ", "particular ", "lighting ", "judgment ", "dimension ", "exposure ", "perception ", "generate ", "approximation ", "with respect to ", "available ", "bring together ", "blend ", "combine ", "account for ", "blindness ", "betrayal ", "poetic ", "tragedy ", "construction ", "distinct ", "overall ", "integration ", "amend ", "interpret ", "contemporary ", "literary ", "attribute ", "dominate ", "lyrics ", "grab ", "phrase ", "minimal ", "distract ", "interpret ", "instrumental music ", "limit ", "pause ", "poetical ", "statement ", "universal ", "indicative of ", "piece ", "sociologist ", "approach ", "long standing ", "argument ", "properly ", "social mobility ", "phenomenon ", "statistically ", "enquire into ", "involved ", "aspire ", "quantitative ", "relaxed ", "indispensable ", "at least ", "as many ", "intensive ", "yield ", "reveal ", "challenging ", "destructive ", "unethical ", "mission ", "summit ", "commit ", "ultimately ", "misrepresent ", "cheat ", "fine ", "unauthorized ", "bring on ", "sensory ", "overload ", "bring on ", "finely ", "spot ", "mechanical ", "superiority ", "overwhelming ", "choice ", "artifact "
 ];
@@ -26,8 +26,8 @@ let fallSpeed = gridSpace * 0.5;
 let pauseGame = false;
 let gameOver = false;
 
-const gameEdgeLeft = 150;
-const gameEdgeRight = 450;
+const gameEdgeLeft = 0;
+const gameEdgeRight = 250;
 
 const colors = [
     "#dca3ff",
@@ -49,56 +49,70 @@ function generateRandomUniqueNumber(min, max) {
     generatedNumbers.push(number);
     return number;
 }
+
+let gameCanvas;
+let gameContainer;
+
 function setup() {
-    createCanvas(600, 540);
+    gameContainer = document.getElementById('game-container'); // Chọn phần tử chứa
+    gameCanvas = createCanvas(380, 490); // Tạo canvas
+    gameCanvas.parent(gameContainer); // Gắn canvas vào phần tử chứa
+
     fallingPiece = new PlayPiece();
     fallingPiece.resetPiece();
-    textFont("Ubuntu");
+    textFont('Press Start 2P');
 }
 
 function draw() {
     const colorDark = "#0d0d0d";
-    const colorLight = "#304550";
-    const colorBackground = "#e1eeb0";
+    const colorLight = "#fff";
+    const colorGold = "#e6ce78";
+    const colorBoder = "#e87302";
+    const colorBackground = "#000";
+    const colorBackground1 = "#522714";
 
     background(colorBackground);
     fill(25);
     noStroke();
-    rect(gameEdgeRight, 0, 150, height);
+    rect(gameEdgeRight, 0, 125, height);
     rect(0, 0, gameEdgeLeft, height);
+
     fill(colorBackground);
-    rect(450, 80, 150, 70);
-    rect(460, 405, 130, 130, 5, 5);
-    rect(460, 210, 130, 60, 5, 5);
-    rect(460, 280, 130, 60, 5, 5);
-    fill(colorLight);
-    rect(450, 85, 150, 20);
-    rect(450, 110, 150, 4);
-    rect(450, 140, 150, 4);
-    fill(colorBackground);
-    rect(460, 60, 130, 35, 5, 5);
-    strokeWeight(3);
+    rect(260, 42, 98, 29, 5, 5);
+    rect(260, 109, 98, 29, 5, 5);
+    rect(260, 176, 98, 29, 100, 100);
+    fill(colorBackground1);
+    rect(255, 244, 112, 67, 5, 5);
+    rect(255, 319, 112, 67, 5, 5);
+    rect(255, 410, 112, 67, 5, 5);
+
+    strokeWeight(2);
     noFill();
-    stroke(colorLight);
-    rect(465, 65, 120, 25, 5, 5);
-    rect(465, 410, 120, 120, 5, 5);
-    rect(465, 215, 120, 50, 5, 5);
-    rect(465, 285, 120, 50, 5, 5);
-    fill(25);
+    stroke(colorGold);
+    rect(260, 176, 98, 29, 100, 100);
+
+    fill(colorGold);
     noStroke();
-    textSize(24);
+    textSize(12);
     textAlign(CENTER);
-    text("Score", 525, 85);
-    text("Level", 525, 238);
-    text("Lines", 525, 308);
-    textSize(24);
-    textAlign(RIGHT);
-    text(currentScore, 560, 135);
-    text(currentLevel, 560, 260);
-    text(linesCleared, 560, 330);
+    text("LEVEL", 310, 34);
+    text("LINES", 310, 102);
+    text("SCORE", 310, 168);
+    text("NEXT", 310, 235);
+    text("HOLD", 310, 405);
+
+    textSize(12);
+    textAlign(CENTER);
+    fill(colorLight);
+    text(currentLevel + "-" + "3", 310, 64);
+    text(linesCleared, 310, 130);
+    text(currentScore, 310, 198);
     stroke(colorDark);
-    line(gameEdgeRight, 0, gameEdgeRight, height);
+    //line(gameEdgeRight, 0, gameEdgeRight, height);
+
+    fallingPiece.showShadow(); // Hiển thị bóng của khối rơi
     fallingPiece.show();
+
     if (keyIsDown(DOWN_ARROW)) {
         updateEvery = 2;
     } else {
@@ -120,25 +134,26 @@ function draw() {
     if (gridWorkers.length > 0) {
         gridWorkers[0].work();
     }
-    textAlign(CENTER);
-    fill(255);
-    noStroke();
-    textSize(14);
-    text("Controls:\n↑\n← ↓ →\n", 75, 155);
-    text("Left and Right:\nmove side to side", 75, 230);
-    text("Up:\nrotate", 75, 280);
-    text("Down:\nfall faster", 75, 330);
-    text("R:\nreset game", 75, 380);
+
     if (gameOver) {
-        fill(colorDark);
-        textSize(54);
+        fill(colorLight);
+        textSize(30);
         textAlign(CENTER);
-        text("Game Over!", 300, 270);
+        text("Game Over!", 200, 230);
     }
+
     strokeWeight(3);
     stroke("#304550");
     noFill();
     rect(0, 0, width, height);
+
+    stroke(colorBoder);
+    strokeWeight(15); // Độ dày viền trên, trái, phải
+    noFill();
+    rect(0, 0, width, height - 3); // Vẽ viền trên, trái, phải
+
+    strokeWeight(5); // Độ dày viền dưới
+    rect(0, height - 3, width, 3); // Vẽ viền dưới
 }
 
 function keyPressed() {
@@ -154,6 +169,32 @@ function keyPressed() {
         if (keyCode === UP_ARROW) {
             fallingPiece.input(UP_ARROW);
         }
+    }
+}
+
+function leftGame() {
+    if (!pauseGame) { // Chỉ di chuyển khi game không bị tạm dừng
+        fallingPiece.input(LEFT_ARROW); // Gọi phương thức input với LEFT_ARROW
+    }
+}
+
+function rightGame() {
+    if (!pauseGame) { // Chỉ di chuyển khi game không bị tạm dừng
+        fallingPiece.input(RIGHT_ARROW); // Gọi phương thức input với RIGHT_ARROW
+    }
+}
+
+function upGame() {
+    if (!pauseGame) { // Chỉ xoay khi game không bị tạm dừng
+        fallingPiece.input(UP_ARROW); // Gọi phương thức input với UP_ARROW
+    }
+}
+
+function downGame() {
+    if (!pauseGame) { // Chỉ rơi nhanh khi game không bị tạm dừng
+        fallingPiece.fall(fallSpeed * 1); // Tăng gấp đôi tốc độ rơi
+    } else {
+        updateEvery = updateEveryCurrent;
     }
 }
 
@@ -228,6 +269,7 @@ function resetGame() {
     // Redraw the game area to clear previous drawings
     draw();
 }
+
 function startGame() {
     if (gameOver) {
         resetGame();
@@ -245,27 +287,82 @@ class PlayPiece {
     constructor() {
         this.pos = createVector(0, 0);
         this.rotation = 0;
+
         this.nextPieceType = Math.floor(Math.random() * 7);
         this.nextPieces = [];
-        this.pieceType = 0;
+
         this.pieces = [];
+        this.pieceType = 0;
+
         this.orientation = [];
         this.fallen = false;
+
+        this.nextPieceQueue = []; // hàng đợi khối tiếp theo
+
+        this.holdPieces = []; // Mảng để chứa các khối hình hold
+        this.holdPieceType = Math.floor(Math.random() * 7);;
     }
 
-    nextPiece() {
-        this.nextPieceType = pseudoRandom(this.pieceType);
-        this.nextPieces = [];
-        const points = orientPoints(this.nextPieceType, 0);
-        let xx = 525, yy = 490;
-        if (this.nextPieceType !== 0 && this.nextPieceType !== 3 && this.nextPieceType !== 5) {
+    // chưa sửa code mới nhất
+
+    holdPiece() {
+        this.holdPieceType = this.pieceType;
+        this.holdPieces = [];
+        const points = orientPoints(this.holdPieceType, 0);
+        let xx = 310, yy = 445;
+        if (this.holdPieceType !== 0 && this.holdPieceType !== 3 && this.holdPieceType !== 5) {
             xx += (gridSpace * 0.5);
         }
-        if (this.nextPieceType == 5) {
+        if (this.holdPieceType == 5) {
             xx -= (gridSpace * 0.5);
         }
         for (let i = 0; i < 4; i++) {
-            this.nextPieces.push(new Square(xx + points[i][0] * gridSpace, yy + points[i][1] * gridSpace, this.nextPieceType));
+            this.holdPieces.push(new Square(xx + points[i][0] * gridSpace, yy + points[i][1] * gridSpace, this.holdPieceType));
+        }
+    }
+
+    nextPiece() {
+        // Nếu hàng đợi trống, thêm một khối mới
+        if (this.nextPieceQueue.length === 0) {
+            this.nextPieceQueue.push(pseudoRandom(this.pieceType));
+            this.nextPieceQueue.push(pseudoRandom(this.nextPieceQueue[0]));
+        }
+
+        // Lấy khối hiện tại từ hàng đợi
+        this.pieceType = this.nextPieceQueue.shift();
+
+        // Thêm một khối mới vào hàng đợi
+        this.nextPieceQueue.push(pseudoRandom(this.nextPieceQueue[this.nextPieceQueue.length - 1]));
+
+        // Làm trống mảng nextPieces để chuẩn bị cho các khối mới
+        this.nextPieces = [];
+
+        // Hiển thị khối "Next 1"
+        const nextPieceType1 = this.nextPieceQueue[0];
+        const points1 = orientPoints(nextPieceType1, 0);
+        let xx1 = 310, yy1 = 278;
+        if (nextPieceType1 !== 0 && nextPieceType1 !== 3 && nextPieceType1 !== 5) {
+            xx1 += (gridSpace * 0.5);
+        }
+        if (nextPieceType1 == 5) {
+            xx1 -= (gridSpace * 0.5);
+        }
+        for (let i = 0; i < 4; i++) {
+            this.nextPieces.push(new Square(xx1 + points1[i][0] * gridSpace, yy1 + points1[i][1] * gridSpace, nextPieceType1));
+        }
+
+        // Hiển thị khối "Next 2"
+        const nextPieceType2 = this.nextPieceQueue[1];
+        const points2 = orientPoints(nextPieceType2, 0);
+        let xx2 = 310, yy2 = 354;
+        if (nextPieceType2 !== 0 && nextPieceType2 !== 3 && nextPieceType2 !== 5) {
+            xx2 += (gridSpace * 0.5);
+        }
+        if (nextPieceType2 == 5) {
+            xx2 -= (gridSpace * 0.5);
+        }
+        for (let i = 0; i < 4; i++) {
+            this.nextPieces.push(new Square(xx2 + points2[i][0] * gridSpace, yy2 + points2[i][1] * gridSpace, nextPieceType2));
         }
     }
 
@@ -279,8 +376,6 @@ class PlayPiece {
                 gameOver = true;
             } else {
                 this.commitShape();
-
-
             }
         }
     }
@@ -288,11 +383,12 @@ class PlayPiece {
     resetPiece() {
         this.rotation = 0;
         this.fallen = false;
-        this.pos.x = 330;
+        this.pos.x = 130;
         this.pos.y = -60;
         this.pieceType = this.nextPieceType;
         this.nextPiece();
         this.newPoints();
+        this.holdPiece();
     }
 
     newPoints() {
@@ -395,8 +491,54 @@ class PlayPiece {
         for (let i = 0; i < this.nextPieces.length; i++) {
             this.nextPieces[i].show();
         }
+
+        for (let i = 0; i < this.holdPieces.length; i++) {
+            this.holdPieces[i].show(); // Hiển thị từng khối hold
+        }
     }
 
+    showShadow() {
+        // Bắt đầu từ vị trí hiện tại của khối
+        let shadowY = this.pos.y;
+    
+        // Tìm vị trí bóng mờ thấp nhất có thể cho toàn bộ khối
+        while (true) {
+            // Kiểm tra va chạm cho toàn bộ khối tại vị trí mới
+            let collision = false;
+            for (let i = 0; i < this.pieces.length; i++) {
+                if (this.futureCollision(0, shadowY - this.pos.y + gridSpace, this.rotation, i)) {
+                    collision = true;
+                    break;
+                }
+            }
+    
+            if (collision) {
+                // Nếu có va chạm, dừng lại
+                break;
+            }
+    
+            // Nếu không có va chạm, di chuyển bóng mờ xuống
+            shadowY += gridSpace;
+    
+            // Kiểm tra nếu vượt quá chiều cao
+            if (shadowY + gridSpace > height) {
+                break;
+            }
+        }
+    
+        // Vẽ bóng mờ cho mỗi ô
+        for (let i = 0; i < this.pieces.length; i++) {
+            fill(255); // Màu trắng cho bóng mờ
+            stroke(25);
+            strokeWeight(2);
+            drawingContext.globalAlpha = 0.15; // Đặt độ trong suốt cho bóng mờ
+            let pieceX = this.pieces[i].pos.x;
+            let pieceY = shadowY + (this.pieces[i].pos.y - this.pos.y);
+            rect(pieceX, pieceY, gridSpace, gridSpace); // Vẽ bóng mờ tại vị trí thấp nhất
+            drawingContext.globalAlpha = 1; // Khôi phục độ trong suốt mặc định
+        }
+    }
+    
     commitShape() {
         for (let i = 0; i < this.pieces.length; i++) {
             gridPieces.push(this.pieces[i]);
@@ -427,18 +569,12 @@ class Square {
 
     show() {
         strokeWeight(2);
-        const colorDark = "#092e1d";
+        //const colorDark = "#092e1d";
         const colorMid = colors[this.type];
         fill(colorMid);
         stroke(25);
-        rect(this.pos.x, this.pos.y, gridSpace - 1, gridSpace - 1);
+        rect(this.pos.x, this.pos.y, gridSpace, gridSpace);
         noStroke();
-        fill(255);
-        rect(this.pos.x + 6, this.pos.y + 6, 18, 2);
-        rect(this.pos.x + 6, this.pos.y + 6, 2, 16);
-        fill(25);
-        rect(this.pos.x + 6, this.pos.y + 20, 18, 2);
-        rect(this.pos.x + 22, this.pos.y + 6, 2, 16);
     }
 }
 
@@ -455,10 +591,10 @@ function analyzeGrid() {
     while (checkLines()) {
         score += 100;
         linesCleared += 1;
-        if (linesCleared % 10 === 0) {
+        if (linesCleared % 15 === 0) {
             currentLevel += 1;
             if (updateEveryCurrent > 2) {
-                updateEveryCurrent -= 10;
+                updateEveryCurrent -= 5;
             }
         }
     }

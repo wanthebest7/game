@@ -5,15 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Tetris Word</title>
+
 </head>
 
 <body>
-    <div id="game-controls">
-        <button class="custom-button" onclick="stopGame()">Stop</button>
-        <button class="custom-button" onclick="startGame()">Start</button>
-        <button class="custom-button" onclick="resetGame()">Reset</button>
+    
+    <div id="box-game">
+        <div id="box-game1">
+            <div id="game-container"></div>
+        
+            <div id="game-controls">
+                <div id="game-controls1">
+                    <button class="custom-button" onclick="upGame()">
+                        <i class="fa-solid fa-caret-up fa-2x"></i>
+                    </button>
+
+                    <button class="custom-button" onclick="leftGame()">
+                        <i class="fa-solid fa-caret-left fa-2x"></i>
+                    </button>
+
+                    <button class="custom-button" onclick="rightGame()">
+                        <i class="fa-solid fa-caret-right fa-2x"></i>
+                    </button>
+
+                    <button class="custom-button" onclick="downGame()">
+                        <i class="fa-solid fa-caret-down fa-2x"></i>
+                    </button>
+                    
+                </div>
+                    
+                <div id="game-controls2">
+                    <button class="custom-button1 button1" onclick="resetGame()">
+                        <i class="fa-solid fa-arrows-rotate fa-3x"></i>
+                    </button>
+                    
+                    <button class="custom-button1 button2" onclick="startGame()">
+                        <i class="fa-solid fa-forward fa-2x" style="transform: rotate(90deg);"></i>
+                    </button>
+
+                    <button class="custom-button1 button3" onclick="stopGame()">
+                        <i class="fa-solid fa-pause fa-2x"></i>
+                    </button>
+                </div>
+                    
+            </div>
+        </div>
     </div>
+
     <div id="vocabulary-list" class="vocabulary-scroll">
         <h2 class="text">English - 한국인</h2>
         <ul id="word-list">
@@ -21,10 +62,10 @@
         </ul>
     </div>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.2/p5.min.js"></script>
     <script src="pieces.js"></script>
     <script src="script.js"></script>
+    
 </body>
 
 </html>
