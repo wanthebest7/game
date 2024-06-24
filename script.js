@@ -1,5 +1,5 @@
 // Define the size of each grid space
-const gridSpace = 24;
+const gridSpace = 20;
 const Englishvoca = [
     "property ", "enhance ", "hypothesis", "relaxed ", "handpicked ", "exaggerated", "so long as ", "renovate ", "long for ", "enclose ", "durable ", "atmosphere ", "application ", "commitment ", "concern ", "properly ", "disruption ", "promote ", "strive to do ", "relaxing ", "extension ", "connect with ", "replacement ", "deserve ", "residential ", "pandemic ", "dispose of ", "solid ", "crew ", "secured ", "sales representative ", "tub ", "oversized ", "regulation ", "burst ", "appreciate ", "tower ", "stillness ", "tremble ", "snap around ", "play a trick ", "ghostly ", "pound ", "glow ", "basement ", "dreadful ", "creep over ", "ball ", "fancy ", "carnival ", "stuck ", "crash into ", "overjoyed ", "triumphantly ", "bow ", "porch ", "yawn ", "dew ", "scent ", "drip ", "dim ", "slip away ", "exposure ", "run through ", "faith ", "mess up ", "run through ", "correct ", "in succession ", "worked up ", "give in ", "be a bundle of nerves ", "set oneself up for ", "regardless of ", "dedicated ", "industrious ", "productivity ", "priority ", "direct ", "linear ", "figurative ", "marginalize ", "miss out on ", "neurobiological ", "standpoint ", "recontextualize ", "previously ", "invisible ", "engage ", "mode ", "stimulate ", "association ", "neural ", "node ", "engagement ", "reimagine ", "exercise ", "fuel ", "temporary ", "restore ", "discipline ", "inherent ", "maladaptive ", "predatory ", "capitalism ", "monument ", "triumph ", "critical ", "thoughtless ", "secure ", "pretender to wisdom ", "shame ", "defeat ", "argument ", "literally ", "opponent ", "descendant ", "ownership ", "countersignalling ", "a point of honour ", "trainers ", "tech ", "status ", "atypical ", "regard ", "assistant ", "high end ", "rate ", "fur ", "relativity ", "fundamental ", "principle ", "make the point that ", "status ", "measure ", "relative to ", "analysis ", "extraordinary ", "reveal ", "disappointment ", "perceive ", "better off ", "automation ", "appeal to ", "eager ", "misguided ", "release ", "perceive ", "diminish ", "present ", "engagement ", "consist of ", "prescribed ", "analyst ", "restrict ", "turn into ", "routine ", "take over ", "time consuming ", "engage in ", "valid ", "eye opening ", "sound ", "anecdote ", "exaggeration ", "manipulate ", "navigator ", "preconceived ", "notion ", "curse ", "megadose ", "promote ", "cup of tea ", "abound ", "consequence ", "erase ", "impatient ", "crisis ", "mindful ", "negatively ", "affect ", "complicated ", "substantial ", "imbalance ", "premise ", "opponent ", "prompt ", "mess up ", "choke ", "thigh ", "current ", "severely ", "attachment ", "toss ", "downstream ", "uncontrollable ", "outcome ", "hopelessly ", "sociotechnical ", "expertise ", "disrupt ", "undertaking ", "statistics ", "existing ", "device ", "integrate ", "take   into account", "institution ", "artifact ", "keep in mind ", "politics ", "promote ", "intend ", "dusty ", "evolving ", "outdated ", "discipline ", "adapt to ", "speedometer ", "accelerate ", "keep pace with ", "presentation ", "matter ", "dress up ", "end up with ", "the vast majority of ", "analysis ", "devote ", "afterthought ", "essential ", "factor in ", "quality ", "accurate ", "conceptualization ", "obesity ", "epidemic ", "self control ", "metaphor ", "capture ", "stimulus ", "artificially ", "unintentionally ", "overconsume ", "excessively ", "societal ", "response ", "proportional ", "perceive ", "appropriate ", "expose ", "explicit ", "preference ", "bare bones ", "overlook ", "advocate ", "sufficiently ", "compelling ", "potential ", "attractiveness ", "self apparent ", "projection ", "return ", "thereby ", "alienate ", "distrust ", "deal making ", "resemble ", "venture capitalist ", "corporation ", "reward ", "budget ", "profit ", "radical ", "outcome ", "appetite ", "overdose ", "explicitly ", "implicitly ", "measurement ", "mute ", "optimally ", "deserted island ", "rub ", "emerge ", "vanish ", "immediately ", "activate ", "grant ", "option ", "limited ", "in accord with ", "violate ", "amused ", "assumption ", "longevity ", "reverse ", "life expectancy ", "symptom ", "prolong ", "accomplish ", "vanity ", "enormous ", "superficial ", "inefficient ", "glimpse ", "extend ", "unprecedented ", "alert ", "underway ", "miraculous ", "prediction ", "breakthrough ", "trigger ", "guarantee ", "humanitarian ", "legal ", "collaboration ", "ongoing ", "exploration ", "literally ", "concept ", "ecological ", "implication ", "inform ", "investigate ", "modification ", "advance ", "boundary ", "manipulate ", "genetic ", "make up ", "productivity ", "organism ", "purchase ", "section ", "crop up ", "trendy ", "subcontracted ", "offshoring ", "catch on ", "remarkable ", "enviable ", "conceive ", "domestically ", "deep learning ", "carry out ", "implications ", "analyst ", "bias ", "neural network ", "representation ", "reproduce ", "assumption ", "reflection ", "perception ", "precisely ", "fresh out of school ", "turn around ", "initiative ", "lose lose ", "school district ", "recognize ", "prior ", "take action ", "confidence ", "hinder ", "progress ", "inhibit ", "impose ", "boundary ", "intuitive ", "association ", "diagnosis ", "explicit ", "procedure ", "pin down ", "side effect ", "henceforth ", "collaboration ", "formalizable ", "affect ", "available ", "independent ", "committee ", "federal ", "publicly ", "respondent ", "occupation ", "mathematical ", "chemist ", "peak ", "surpass ", "share ", "transaction ", "dominate ", "exceed ", "forest area ", "account for ", "constitute ", "combine ", "estimate ", "scale ", "squid ", "octopus ", "fossil ", "fin ", "crawl ", "rotate ", "belly ", "electrical field ", "prey ", "location ", "reproduction ", "live young ", "diameter ", "develop ", "reproductive tract ", "apparently ", "commit oneself to ", "qualify ", "tailor ", "involved with ", "psychoanalytical ", "society ", "put on hold", "pioneering ", "authorities ", "emigrate ", "take up ", "professorship ", "illustrator ", "influential ", "artwork ", "illustration ", "entry ", "medium ", "contestant ", "retain ", "publication ", "vending machine ", "interactive ", "feed ", "nurturing ", "recommend ", "outfit ", "instruction ", "nap ", "rock ", "pose ", "safety hazard ", "intend for ", "renewal ", "ceremony ", "root crop ", "in attendance ", "extend ", "forehead ", "immigrant ", "ritual ", "priest ", "lay ", "enlightenment ", "paste ", "ash ", "clay ", "sect ", "horizontal ", "bisect ", "vertical ", "jewelry ", "come up with ", "appreciate ", "log ", "submit ", "rental ", "private ", "organization ", "reservation ", "fee ", "in advance ", "accept ", "register ", "cancellation ", "notice ", "no later than ", "prior to ", "refund ", "geared toward ", "remotely ", "registration ", "sign up for ", "repetition ", "acquire ", "effectively ", "relate ", "perspective ", "comparison ", "determine ", "feature ", "phenomenon ", "primary ", "prevention ", "occur ", "secondary ", "emphasize ", "identify ", "detect ", "treatment ", "outcome ", "curative ", "plentiful ", "prescribe ", "manage ", "significant ", "remedy ", "compensate ", "in proportion to ", "damages ", "assumption ", "correction ", "unintended ", "adoption ", "penalize ", "hypothetical ", "degrade ", "weaken ", "in good faith ", "architectural ", "billing rate ", "standpoint ", "agreement ", "charge ", "terms ", "checkbook ", "inefficient ", "bring   to the table", "negotiator ", "overestimate ", "bias ", "perception ", "normally ", "pay attention to ", "be conscious of ", "analogy ", "prehistoric ", "artifact ", "meteorite ", "accepted ", "populate ", "manufacture ", "construct ", "realization ", "in distinction to ", "current ", "neurological ", "transplantation ", "consist of ", "regenerate ", "relatively ", "procedure ", "explore ", "treatment ", "stroke ", "significant ", "proper ", "circuit ", "oppose ", "religious ", "philosophical ", "emerge ", "natural selection ", "primarily ", "implications ", "immense ", "evolve ", "artificial ", "civilization ", "by now ", "essentially ", "trivial ", "unsustainable ", "crash ", "soft landing ", "utopian ", "restriction ", "go along with ", "the Depression ", "federal government ", "explode ", "expand ", "formula ", "convince ", "prescription drug ", "govern ", "applied ", "uncover ", "concept ", "theory ", "stimulate ", "category ", "manipulate ", "arouse ", "considerable ", "criticism ", "demonstrate ", "effectiveness ", "critic ", "controllable ", "variable ", "fund ", "promote ", "establish ", "regional ", "committee ", "separation ", "breed ", "dialect ", "boundary ", "border ", "a stone’s throw ", "local ", "determine ", "globally ", "bathing costume ", "first and foremost ", "unsuitable ", "cognitively ", "take advantage of ", "insight ", "locational ", "reference ", "moral ", "component ", "elegance ", "festive ", "flexible ", "uphold ", "bourgeois ", "maintain ", "centrally ", "secondary ", "be predicated (up)on", "assumption ", "sacred ", "cornerstone ", "challenge ", "invalidate ", "dominance hierarchy ", "formalized ", "codified ", "dissolve ", "eliminate ", "self righteous ", "superiority ", "intelligentsia ", "intellectual ", "trace to ", "merchant ", "shoemaker ", "worldly ", "scholarly ", "injustice ", "remedy ", "trick ", "theft ", "norm ", "hold   in check", "temper ", "assault ", "aggressively ", "inhibit ", "continual ", "a stream of ", "more often than not ", "aggression ", "portray ", "alter ", "inhibition ", "gradual ", "wear down ", "ecologist ", "megaherbivore ", "rhinoceros", "hippopotamus", "massive ", "immune to ", "predator ", "vulnerable to ", "slow breeding ", "be doomed ", "prey ", "sustain ", "bag ", "let up ", "observation ", "factor ", "determine ", "stationary ", "apart from ", "turn on axis ", "on a daily basis ", "interpret ", "in the light of ", "theory ", "inadequate ", "self esteem ", "considerable ", "route ", "undeniable ", "immaturity ", "resolution ", "verbally ", "thereby ", "pro  ", "set the stage for ", "engaging ", "entertaining ", "identify ", "tightly ", "be at home in ", "sermon ", "monologue ", "feature story ", "lead ", "illustration ", "scattered ", "manuscript ", "insert ", "statistics ", "compelling ", "perceived ", "postindustrial ", "infrastructure ", "manipulation ", "paradoxical ", "displacement ", "concise ", "inevitable ", "visualize ", "exploit ", "consume ", "extensively ", "arguably ", "revolution ", "fluid ", "extra cellular ", "blood sugar level ", "liver ", "storage ", "provision ", "stimulate ", "inhibit ", "adjust ", "concentration ", "constant ", "go about ", "effortlessly ", "apparent ", "simplicity ", "illusion ", "vision ", "complicated ", "conscious mind ", "harvest ", "manufacture ", "container ", "interpretation ", "concern with ", "object ", "rocket science ", "overestimate ", "rate ", "in detail ", "revisit ", "subject ", "lower ", "rating ", "perform ", "sketch out ", "striking ", "phenomenon ", "illusion ", "explanatory ", "alter ", "disability ", "point out ", "constantly ", "sequence ", "sensory ", "orienting response ", "perceptual ", "shortening ", "attention span ", "novel ", "give in to ", "passive ", "analyze ", "evenly ", "distribute ", "put   aside", "direct ", "domestic ", "rarely ", "observe ", "pasture ", "gauge ", "display ", "aggressive ", "preferred ", "settle a score ", "counteract ", "boredom ", "dominance ", "dispute ", "conflict ", "result in ", "replacement ", "adjust ", "interpretation ", "stand for ", "equate ", "statement ", "immediate ", "cognitive ", "obvious ", "gravity ", "dominate ", "dynamics ", "overcome ", "resistance ", "descend ", "surrender ", "passive ", "compliance ", "unevenness ", "location ", "dynamically ", "potential energy ", "mass ", "vertical ", "obtain ", "experimental ", "demonstration ", "with regard to ", "mention ", "invariably ", "convince oneself that ", "navigate ", "sail ", "crew ", "significant ", "decent ", "determine ", "precisely ", "essential ", "reflection ", "graphically ", "representation ", "shoreline ", "wording ", "neutral ", "tailor ", "personality ", "tutor ", "be reluctant to do ", "contribution ", "face threatening ", "confidence ", "supportive ", "empathic ", "ambitious ", "artificial ", "adaptation ", "prejudice ", "inform ", "unjust ", "discrimination ", "acknowledge ", "hostile ", "solely ", "merit ", "pose ", "threatening ", "intent ", "subjected to ", "apparently ", "translate into ", "prospects ", "concept ", "precisely ", "millennium ", "publicly ", "in decline ", "conversely ", "digitization ", "convert ", "format ", "advanced ", "distribution ", "innovation ", "contain ", "intent ", "encode ", "cue ", "dynamic ", "above chance", "refine ", "patron ", "intention ", "appreciate ", "isolated ", "reaction ", "take pains ", "concerning ", "framing ", "presentation ", "for the benefit of ", "particular ", "lighting ", "judgment ", "dimension ", "exposure ", "perception ", "generate ", "approximation ", "with respect to ", "available ", "bring together ", "blend ", "combine ", "account for ", "blindness ", "betrayal ", "poetic ", "tragedy ", "construction ", "distinct ", "overall ", "integration ", "amend ", "interpret ", "contemporary ", "literary ", "attribute ", "dominate ", "lyrics ", "grab ", "phrase ", "minimal ", "distract ", "interpret ", "instrumental music ", "limit ", "pause ", "poetical ", "statement ", "universal ", "indicative of ", "piece ", "sociologist ", "approach ", "long standing ", "argument ", "properly ", "social mobility ", "phenomenon ", "statistically ", "enquire into ", "involved ", "aspire ", "quantitative ", "relaxed ", "indispensable ", "at least ", "as many ", "intensive ", "yield ", "reveal ", "challenging ", "destructive ", "unethical ", "mission ", "summit ", "commit ", "ultimately ", "misrepresent ", "cheat ", "fine ", "unauthorized ", "bring on ", "sensory ", "overload ", "bring on ", "finely ", "spot ", "mechanical ", "superiority ", "overwhelming ", "choice ", "artifact "
 ];
@@ -27,7 +27,7 @@ let pauseGame = false;
 let gameOver = false;
 
 const gameEdgeLeft = 0;
-const gameEdgeRight = 250;
+const gameEdgeRight = 410;
 
 const colors = [
     "#dca3ff",
@@ -55,7 +55,7 @@ let gameContainer;
 
 function setup() {
     gameContainer = document.getElementById('game-container'); // Chọn phần tử chứa
-    gameCanvas = createCanvas(380, 490); // Tạo canvas
+    gameCanvas = createCanvas(600, 600); // Tạo canvas
     gameCanvas.parent(gameContainer); // Gắn canvas vào phần tử chứa
 
     fallingPiece = new PlayPiece();
@@ -74,43 +74,43 @@ function draw() {
     background(colorBackground);
     fill(25);
     noStroke();
-    rect(gameEdgeRight, 0, 125, height);
+    rect(gameEdgeRight, 0, 180, height);
     rect(0, 0, gameEdgeLeft, height);
 
     fill(colorBackground);
-    rect(260, 42, 98, 29, 5, 5);
-    rect(260, 109, 98, 29, 5, 5);
-    rect(260, 176, 98, 29, 100, 100);
+    rect(430, 50, 140, 35, 5, 5);
+    rect(430, 130, 140, 35, 5, 5);
+    rect(430, 210, 140, 35, 100, 100);
     fill(colorBackground1);
-    rect(255, 244, 112, 67, 5, 5);
-    rect(255, 319, 112, 67, 5, 5);
-    rect(255, 410, 112, 67, 5, 5);
+    rect(420, 290, 160, 80, 5, 5);
+    rect(420, 380, 160, 80, 5, 5);
+    rect(420, 500, 160, 80, 5, 5);
 
     strokeWeight(2);
     noFill();
     stroke(colorGold);
-    rect(260, 176, 98, 29, 100, 100);
+    rect(430, 210, 140, 35, 100, 100);
 
     fill(colorGold);
     noStroke();
-    textSize(12);
+    textSize(18);
     textAlign(CENTER);
-    text("LEVEL", 310, 34);
-    text("LINES", 310, 102);
-    text("SCORE", 310, 168);
-    text("NEXT", 310, 235);
-    text("HOLD", 310, 405);
+    text("LEVEL", 500, 40);
+    text("LINES", 500, 120);
+    text("SCORE", 500, 200);
+    text("NEXT", 500, 280);
+    text("HOLD", 500, 490);
 
-    textSize(12);
+    textSize(18);
     textAlign(CENTER);
     fill(colorLight);
-    text(currentLevel + "-" + "3", 310, 64);
-    text(linesCleared, 310, 130);
-    text(currentScore, 310, 198);
+    text(currentLevel +  "-" + "3", 500, 75);
+    text(linesCleared, 500, 155);
+    text(currentScore, 500, 235);
     stroke(colorDark);
-    //line(gameEdgeRight, 0, gameEdgeRight, height);
 
     fallingPiece.showShadow(); // Hiển thị bóng của khối rơi
+
     fallingPiece.show();
 
     if (keyIsDown(DOWN_ARROW)) {
@@ -137,9 +137,9 @@ function draw() {
 
     if (gameOver) {
         fill(colorLight);
-        textSize(30);
+        textSize(50);
         textAlign(CENTER);
-        text("Game Over!", 200, 230);
+        text("Game Over!", 300, 320);
     }
 
     strokeWeight(3);
@@ -148,12 +148,9 @@ function draw() {
     rect(0, 0, width, height);
 
     stroke(colorBoder);
-    strokeWeight(15); // Độ dày viền trên, trái, phải
+    strokeWeight(15);
     noFill();
-    rect(0, 0, width, height - 3); // Vẽ viền trên, trái, phải
-
-    strokeWeight(5); // Độ dày viền dưới
-    rect(0, height - 3, width, 3); // Vẽ viền dưới
+    rect(0, 0, width, height); // Vẽ viền bao quanh toàn bộ canvas
 }
 
 function keyPressed() {
@@ -309,7 +306,7 @@ class PlayPiece {
         this.holdPieceType = this.pieceType;
         this.holdPieces = [];
         const points = orientPoints(this.holdPieceType, 0);
-        let xx = 310, yy = 445;
+        let xx = 500, yy = 540;
         if (this.holdPieceType !== 0 && this.holdPieceType !== 3 && this.holdPieceType !== 5) {
             xx += (gridSpace * 0.5);
         }
@@ -340,7 +337,7 @@ class PlayPiece {
         // Hiển thị khối "Next 1"
         const nextPieceType1 = this.nextPieceQueue[0];
         const points1 = orientPoints(nextPieceType1, 0);
-        let xx1 = 310, yy1 = 278;
+        let xx1 = 500, yy1 = 330;
         if (nextPieceType1 !== 0 && nextPieceType1 !== 3 && nextPieceType1 !== 5) {
             xx1 += (gridSpace * 0.5);
         }
@@ -354,7 +351,7 @@ class PlayPiece {
         // Hiển thị khối "Next 2"
         const nextPieceType2 = this.nextPieceQueue[1];
         const points2 = orientPoints(nextPieceType2, 0);
-        let xx2 = 310, yy2 = 354;
+        let xx2 = 500, yy2 = 420;
         if (nextPieceType2 !== 0 && nextPieceType2 !== 3 && nextPieceType2 !== 5) {
             xx2 += (gridSpace * 0.5);
         }
@@ -383,7 +380,7 @@ class PlayPiece {
     resetPiece() {
         this.rotation = 0;
         this.fallen = false;
-        this.pos.x = 130;
+        this.pos.x = 210;
         this.pos.y = -60;
         this.pieceType = this.nextPieceType;
         this.nextPiece();
@@ -591,10 +588,10 @@ function analyzeGrid() {
     while (checkLines()) {
         score += 100;
         linesCleared += 1;
-        if (linesCleared % 15 === 0) {
+        if (linesCleared % 10 === 0) {
             currentLevel += 1;
             if (updateEveryCurrent > 2) {
-                updateEveryCurrent -= 5;
+                updateEveryCurrent -= 10;
             }
         }
     }
@@ -612,7 +609,7 @@ function checkLines() {
                 count++;
             }
         }
-        if (count === 10) {
+        if (count === 20) {
             gridPieces = gridPieces.filter(piece => piece.pos.y !== y);
             for (let i = 0; i < gridPieces.length; i++) {
                 if (gridPieces[i].pos.y < y) {
