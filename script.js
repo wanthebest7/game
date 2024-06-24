@@ -205,7 +205,7 @@ function speakText(msgeng) {
     // Thiết lập văn bản bạn muốn chuyển đổi thành âm thanh
     msg.text = msgeng;
     msg.lang = 'en-US';
-    msg.rate = 0.5;
+    msg.rate = 0.8;
     // Phát âm thanh
     window.speechSynthesis.speak(msg);
 }
@@ -218,7 +218,7 @@ function speakText2(msgeng) {
     msg.lang = 'ko-KR';
 
     // Chỉnh tốc độ đọc
-    msg.rate = 0.8;
+    msg.rate = 0.9;
 
     // Phát âm thanh
     window.speechSynthesis.speak(msg);
