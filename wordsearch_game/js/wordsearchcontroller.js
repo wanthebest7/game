@@ -17,94 +17,130 @@ function WordSearchController(gameId, listId, solveId, newGameId, instructionsId
 
 	//an object containing various themes/words for the game
 	var searchTypes = {
-		"Math! (please don't run away)": [
-			["asymptote"], ["differential"], ["algorithm"], ["boolean"],
-			["euclidean"], ["integral"], ["logarithm"], ["matrix"],
-			["riemann"], ["polyhedron"], ["theta"], ["vector"],
-			["binomial"], ["pythagoras"], ["eccentricity"], ["unit circle"],
-			["derivative"], ["polar coordinates"], ["tangent"], ["scalene"]
-		],
-		"Astronomy and Physics!": [
-			["circumpolar"], ["comet"], ["asteroid"], ["declination"],
-			["earthshine"], ["albedo"], ["quantum"], ["olivine"],
-			["pyroxene"], ["decoherence"], ["fermion"], ["quark"],
-			["gluon"], ["redshift"], ["inflaton"], ["planetesimal"],
-			["anthropic"], ["exogenesis"], ["atom"], ["planck"]
-		],
-		"Philosophy!": [
-			["metaphysics"], ["modus ponens"], ["modus tollens"], ["analogy"],
-			["a priori"], ["a posteriori"], ["conditional"], ["nietzsche"],
-			["diogenes"], ["paradox"], ["occam's razor"], ["causality"],
-			["induction"], ["deduction"], ["ontology"], ["theology"],
-			["syllogism"], ["ethics"], ["karl marx"], ["pluralism"]
-		],
-		"World Mythology :D": [
-			["chronos"], ["aether"], ["hypnos"], ["psyche"],
-			["jupiter"], ["sol"], ["chaos"], ["pandora"],
-			["thor"], ["valhalla"], ["amaterasu"], ["osiris"],
-			["mazu"], ["izanami"], ["susanoo"], ["xipe totec"],
-			["mercury"], ["bastet"], ["sekhmet"], ["ptah"]
-		],
-		"Shades of Purple!": [
-			["violet"], ["periwinkle"], ["plum"], ["grape"],
-			["orchid"], ["wine"], ["mauve"], ["lavender"],
-			["lilac"], ["mulberry"], ["eggplant"], ["heliotrope"],
-			["liseran purple"], ["amethyst"], ["fuchsia"], ["pomp and power"],
-			["sangria"], ["boysenberry"], ["thistle"], ["heather"]
-		],
-		"The Many Different Flavors of Cat!": [
-			["Russian Blue"], ["Siamese"], ["Persian"], ["Sphynx"],
-			["Ragdoll"], ["Singapura"], ["Snowshoe"], ["Turkish Van"],
-			["Maine Coon"], ["Devon Rex"], ["Charteux"], ["Scottish Fold"],
-			["Himalayan"], ["Ragamuffin"], ["Bombay"], ["Siberian"],
-			["Egyptian Mau"], ["Norwegian Forest Cat"], ["Abyssinian"], ["York Chocolate"]
-		]
+			"mach1": [
+				["property"], ["enhance"], ["hypothesis"], ["relaxed"], ["handpicked"], ["exaggerated"],
+				["so long as"], ["renovate"], ["long for"], ["enclose"], ["durable"], ["atmosphere"],
+				["application"], ["commitment"], ["concern"], ["properly"], ["disruption"], ["promote"],
+				["strive to do"], ["relaxing"]
+			],
+			"mach2": [
+				["extension"], ["connect with"], ["replacement"], ["deserve"], ["residential"], ["pandemic"],
+				["dispose of"], ["solid"], ["crew"], ["secured"], ["sales representative"], ["tub"],
+				["oversized"], ["regulation"], ["burst"], ["appreciate"], ["tower"], ["stillness"],
+				["tremble"], ["snap around"]
+			],
+			"mach3": [
+				["play a trick"], ["ghostly"], ["pound"], ["glow"], ["basement"], ["dreadful"],
+				["creep over"], ["ball"], ["fancy"], ["carnival"], ["stuck"], ["crash into"],
+				["overjoyed"], ["triumphantly"], ["bow"], ["porch"], ["yawn"], ["dew"],
+				["scent"], ["drip"]
+			],
+			"mach4": [
+				["dim"], ["slip away"], ["exposure"], ["run through"], ["faith"], ["mess up"],
+				["run through"], ["correct"], ["in succession"], ["worked up"], ["give in"],
+				["be a bundle of nerves"], ["set oneself up for"], ["regardless of"], ["dedicated"],
+				["industrious"], ["productivity"], ["priority"], ["direct"], ["linear"]
+			],
+			"mach5": [
+				["figurative"], ["marginalize"], ["miss out on"], ["neurobiological"], ["standpoint"],
+				["recontextualize"], ["previously"], ["invisible"], ["engage"], ["mode"], ["stimulate"],
+				["association"], ["neural"], ["node"], ["engagement"], ["reimagine"], ["exercise"],
+				["fuel"], ["temporary"], ["restore"]
+			],
+			"mach6": [
+				["discipline"], ["inherent"], ["maladaptive"], ["predatory"], ["capitalism"], ["monument"],
+				["triumph"], ["critical"], ["thoughtless"], ["secure"], ["pretender to wisdom"], ["shame"],
+				["defeat"], ["argument"], ["literally"], ["opponent"], ["descendant"], ["ownership"],
+				["countersignalling"], ["a point of honour"]
+			],
+			"mach7": [
+				["trainers"], ["tech"], ["status"], ["atypical"], ["regard"], ["assistant"], ["high end"],
+				["rate"], ["fur"], ["relativity"], ["fundamental"], ["principle"], ["make the point that"],
+				["status"], ["measure"], ["relative to"], ["analysis"], ["extraordinary"], ["reveal"],
+				["disappointment"]
+			],
+			"mach8": [
+				["perceive"], ["better off"], ["automation"], ["appeal to"], ["eager"], ["misguided"], 
+				["release"], ["perceive"], ["diminish"], ["present"], ["engagement"], ["consist of"], 
+				["prescribed"], ["analyst"], ["restrict"], ["turn into"], ["routine"], ["take over"], 
+				["time consuming"], ["engage in"]
+			],
+			"mach9": [
+				["valid"], ["eye opening"], ["sound"], ["anecdote"], ["exaggeration"], ["manipulate"], 
+				["navigator"], ["preconceived"], ["notion"], ["curse"], ["megadose"], ["promote"], 
+				["cup of tea"], ["abound"], ["consequence"], ["erase"], ["impatient"], ["crisis"], 
+				["mindful"], ["negatively"]
+			],
+			"mach10": [
+				["affect"], ["complicated"], ["substantial"], ["imbalance"], ["premise"], ["opponent"], 
+				["prompt"], ["mess up"], ["choke"], ["thigh"], ["current"], ["severely"], ["attachment"], 
+				["toss"], ["downstream"], ["uncontrollable"], ["outcome"], ["hopelessly"], ["sociotechnical"], 
+				["expertise"]
+			]
 	};
 	
 
 	var searchTypesKo = {
-		"수학! (도망치지 마세요)": [
-			["접선"], ["미분"], ["알고리즘"], ["부울"],
-			["유클리드"], ["적분"], ["로그"], ["행렬"],
-			["리만"], ["다면체"], ["세타"], ["벡터"],
-			["이항"], ["피타고라스"], ["이심률"], ["단위 원"],
-			["도함수"], ["극좌표"], ["접선"], ["부등변 삼각형"]
-		],
-		"천문학과 물리학!": [
-			["주극성"], ["혜성"], ["소행성"], ["경사각"],
-			["지구 빛"], ["알베도"], ["양자"], ["올리빈"],
-			["파이록센"], ["비일관성"], ["페르미온"], ["퀴리크"],
-			["글루온"], ["적색편이"], ["인플래턴"], ["플라네테시멀"],
-			["인류중심론"], ["외생론"], ["원자"], ["플랑크"]
-		],
-		"철학!": [
-			["형이상학"], ["모더스 포넨스"], ["모더스 톨렌스"], ["유추법"],
-			["선지적 사실"], ["후지적 사실"], ["조건문"], ["니체"],
-			["디오게네스"], ["역설"], ["올카미의 면도칼"], ["인과관계"],
-			["귀납법"], ["역추론"], ["존재론"], ["신학"],
-			["논증법"], ["윤리학"], ["칼 마르크스"], ["다원론"]
-		],
-		"세계 신화 :D": [
-			["크로노스"], ["에테르"], ["힙노스"], ["프시케"],
-			["주피터"], ["태양"], ["혼돈"], ["판도라"],
-			["토르"], ["발할라"], ["아마테라스"], ["오시리스"],
-			["마주"], ["이자나미"], ["스사노오"], ["시페 토텍"],
-			["수은"], ["바스테트"], ["세크메트"], ["프타"]
-		],
-		"보라색의 다양한 색깔!": [
-			["보라색"], ["페리윙클"], ["자두"], ["포도"],
-			["난초색"], ["와인"], ["모브"], ["라벤더"],
-			["라일락"], ["머베리"], ["가지"], ["엘리오트로프"],
-			["리세란 보라"], ["자수정"], ["푸시아"], ["장식과 권력"],
-			["산그리아"], ["보이센베리"], ["엉겅퀴"], ["헤더"]
-		],
-		"고양이의 다양한 맛!": [
-			["러시안 블루"], ["시암"], ["페르시안"], ["스핑크스"],
-			["랙돌"], ["싱가푸라"], ["스노슈"], ["터키 반"],
-			["메인 쿤"], ["데본 렉스"], ["샤르트르"], ["스코티시 폴드"],
-			["히말라야"], ["라가머핀"], ["봄베이"], ["시베리안"],
-			["이집션 마우"], ["노르웨이 숲 고양이"], ["아비시니안"], ["요크 초콜릿"]
-		]
+			"mach1": [
+				["자산재산"], ["개선향상시키다"], ["가상설정"], ["편안한"], ["엄선한"], ["과장된"],
+				["하기만하면"], ["보수개조하다"], ["간절히원하다"], ["동봉하다"], ["튼튼한"], ["분위기"],
+				["신청"], ["헌신약속"], ["염려하는관심사"], ["적절하게"], ["방해혼란"], ["촉진승진시키다"],
+				["애써노력하다"], ["느긋한편한"]
+			],
+			"mach2": [
+				["연장선구내전화"], ["이해하고친해지다"], ["후임자대체물"], ["마땅히받을만하다"], ["주택의주거의"], ["세계적인유행병"],
+				["처리하다"], ["고형의고체의"], ["승무원"], ["안전한"], ["영업대표담당자"], ["욕조통"],
+				["너무큰"], ["규정"], ["터지다"], ["감사하다"], ["위로높이솟다"], ["정적고요"],
+				["떨리다"], ["휙돌아가다"]
+			],
+			"mach3": [
+				["눈속이다"], ["유령같은"], ["세차게두드리다"], ["빛나다빛내다"], ["지하실지하"], ["굉장히무서운"],
+				["공포가엄습하다"], ["무도회댄스파티"], ["색깔이화려한"], ["축제사육제"], ["꼼짝달싹못하는"], ["부딪치다충돌하다"],
+				["매우기쁜"], ["위풍당당하게"], ["인사하다"], ["현관"], ["하품하다"], ["이슬"],
+				["향기냄새"], ["방울져서흐르다"]
+			],
+			"mach4": [
+				["흐릿한희미한"], ["사라지다없어지다"], ["접함노출"], ["끝까지훑어보다"], ["믿음"], ["망치다"],
+				["끝까지대충하는연습"], ["바로잡다"], ["연속으로"], ["흥분한"], ["굴복하다"], ["신경이곤두서다"],
+				["좋지않은상태가되다"], ["에상관없이"], ["헌신적인"], ["근면한"], ["생산성"], ["우선순위"],
+				["길안내하다"], ["선형의선적인"]
+			],
+			"mach5": [
+				["비유적인"], ["소외시키다"], ["놓치다"], ["신경생물학의"], ["관점"], ["새로운맥락에적용하다"],
+				["이전에"], ["보이지않는"], ["사용고용관여시키다"], ["방식"], ["자극하다"], ["연상연관"],
+				["신경의"], ["연결망의교점접합점"], ["참여관여"], ["새롭게재해석하다"], ["발휘하다"], ["증가시키다"],
+				["일시적인임시의"], ["회복시키다복구하다"]
+			],
+			"mach6": [
+				["규율통제"], ["내재하는타고난"], ["적응하지못하는"], ["약탈하는탐욕스러운"], ["자본주의"], ["기념탑기념물"],
+				["승리대성공"], ["위태로운위험한"], ["무분별한경솔한"], ["묶어놓다고정하다"], ["지혜가있는척하는사람"], ["창피모욕하다"],
+				["패배시키다이기다"], ["논쟁토론"], ["그야말로문자그대로"], ["상대반대자"], ["자손후예유래한것"], ["소유"],
+				["반대신호보내기"], ["명예에관한문제"]
+			],
+			"mach7": [
+				["운동화"], ["과학기술"], ["지위"], ["이례적인격식벗어난"], ["호감존경"], ["점원조수"], ["최고급의"],
+				["평가하다"], ["모피"], ["상대성"], ["기본적인"], ["원칙"], ["이라는주장하다"],
+				["상태지위"], ["측정하다"], ["비교하여"], ["분석"], ["특별한"], ["밝히다드러내다"],
+				["실망"]
+			],
+			"mach8": [
+				["여기다인식하다"], ["상황이더나은"], ["자동화"], ["에호소하다"], ["열렬한간절히바라는"], ["잘못된오도된"], 
+				["해방면제"], ["인식하다지각하다"], ["감소시키다"], ["나타내다제시하다"], ["개입참여"], ["으로구성되다"], 
+				["규정된미리정해진"], ["분석가"], ["한정하다제한하다"], ["으로전환하다"], ["정례적인일"], ["떠맡다"], 
+				["시간이걸리는"], ["하다에참여하다"]
+			],
+			"mach9": [
+				["타당한유효한"], ["놀랄만한훌륭한"], ["괜찮은옳은"], ["일화"], ["과장"], ["조종하다"], 
+				["정보검색자항해사"], ["사전에형성된"], ["개념생각"], ["저주"], ["대량투여하다"], ["조장하다장려하다"], 
+				["선호하는일"], ["풍부하다"], ["결과"], ["지우다"], ["성급한"], ["위기"], 
+				["염두에두는"], ["부정적으로"]
+			],
+			"mach10": [
+				["영향미치다"], ["복잡한"], ["상당한"], ["불균형"], ["전제"], ["상대방"], 
+				["하게하다부추기다"], ["망치다"], ["실패하다망치다"], ["허벅지"], ["흐름조류"], ["심하게심각하게"], ["애착"], 
+				["뒤흔들다내던지다"], ["하류로흐름에따라"], ["통제할수없는"], ["결과"], ["대책없이"], ["사회기술적"], 
+				["전문지식"]
+			]
 	};
 	
 	
