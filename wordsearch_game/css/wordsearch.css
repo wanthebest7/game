@@ -1,0 +1,262 @@
+* {
+
+	text-align: center;
+	font-family:  "Moon", Arial, sans serif;
+	font-weight: normal;
+
+}
+
+h1, h2, #wordTheme, #solveButton, #newGameButton, .listWord {
+
+	padding: 3.79px;
+
+}
+
+h1, h2, #wordTheme, #solveButton, #newGameButton {
+
+	border: 2px black solid;
+	border-radius: 8px;
+	font-weight: bold;
+
+} 
+
+h1, h2, .cell, #wordTheme, #wordlist {
+
+	background-color: white;
+
+}
+
+h1, h2 {
+
+	margin: 10px auto 10px auto;
+	display: table;
+
+}
+
+#time{
+	font-size:40px;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	height: 50px;
+	border-radius: 10px;
+	justify-content: center;  /* Căn giữa các thẻ con theo chiều ngang */
+    align-items: center;
+	
+}
+#tutorial{
+	font-size:20px;
+	font-weight: bold;
+	background-color: rgb(255, 255, 255);
+	height: 300px;
+	width: 300px;
+	border-radius: 10px;
+	justify-content: center;  /* Căn giữa các thẻ con theo chiều ngang */
+    align-items: center;
+	
+}
+
+b{
+	width: 280px;
+	font-size:15px;
+	font-weight: bold;
+	
+}
+#timer{
+	font-weight: bold;
+	color: #ec4d4d;
+}
+body {
+
+	background-color: #EAF7FB;
+
+}
+
+#wordTheme {
+
+	border-radius: 8px;
+
+}
+#setting { 
+	margin-right: 10px;
+	justify-content: center;  /* Căn giữa các thẻ con theo chiều ngang */
+    align-items: center;
+	
+}
+#wordboard {
+
+	border: 2px black solid;
+	border-radius: 5px;
+	display: table;
+	min-width: 500px;
+	background-color: #ffffff;
+
+}
+
+.boardRow {
+
+	display: table-row;
+
+}
+
+.cell {
+
+	margin: 0 auto;
+	border: none;
+	display: table-cell;
+	height:30px;
+	width: 30px;
+	font-size: 17px;
+	padding: 0;
+	outline: 0;
+	border-radius: 6px;
+	background-color: #ffffff00;
+	font-weight: bolder;
+	/*ensures text can't be accidentally selected*/
+	cursor: default; 
+	-moz-user-select: none;
+    -ms-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+
+}
+
+.cell:hover {
+	color: #ffffff;
+	background-color: rgb(151, 141, 242);
+	cursor: url('./pen.png'), auto;
+
+}
+
+.cell.selectable {
+
+	background-color: rgb(206, 206, 234);
+
+}
+
+.cell.selected { 
+
+	background-color: rgb(106, 90, 205);
+
+}
+
+.cell.found {
+	
+	background-color: rgb(158, 123, 158);
+	border: 1px rgb(255, 255, 255) solid;
+	font-weight: bold;
+
+}
+
+#wordlist { 
+	margin-left: 10px;
+	border-radius: 10px;
+	height: 200px;
+	border: 2px black solid;
+	display: table;
+	min-width: 300px;
+	font-size: 17px;
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+.listRow {
+
+	display: table-row;
+
+}
+
+.listWord {
+	font-weight: bold;
+	color: rgb(6, 118, 51);
+	display: table-cell;
+	
+}
+.listWord:hover {
+	color: #ffffff;
+	background-color: rgb(151, 141, 242);
+	cursor: url('./search.png'), auto;
+
+}
+.listWord.found {
+
+	color: rgb(158, 123, 158);
+	text-decoration: line-through;
+	
+	
+}
+
+#solveButton, #newGameButton {
+
+	background-color: rgb(146, 213, 249);
+	margin: 20px auto 20px auto;
+	display: block;
+	outline: 0;
+	border-radius: 8px;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+h4{
+	font-size:30px;
+	font-weight: bold;
+	color: black;
+	display: table-cell;
+	margin-bottom: 20px;
+}
+.button{
+	background-color: rgb(146, 213, 249);
+	margin: 20px auto 20px auto;
+	display: block;
+	outline: 0;
+	border-radius: 8px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#newGameButton:hover {
+	color: #ffffff;
+	background-color: rgb(151, 141, 242);
+	
+}
+#solveButton:hover {
+	color: #ffffff;
+	background-color: rgb(151, 141, 242);
+
+}
+.button:hover {
+	color: #ffffff;
+	background-color: rgb(151, 141, 242);
+
+}
+@font-face {
+
+	font-family: "Moon";
+	src: url("../fonts/Moon-Regular.woff2") format("woff2"),
+		 url("../fonts/Moon-Regular.woff") format("woff");
+	font-weight: normal;
+
+}
+
+@font-face {
+
+	font-family: "Moon";
+	src: url("../fonts/Moon-Bold.woff2") format("woff2"),
+		 url("../fonts/Moon-Bold.woff") format("woff");
+	font-weight: bold;
+
+}
+.container {
+	display: flex;
+    justify-content: center;  /* Căn giữa các thẻ con theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung trong .container */
+}
+body {
+    background-image: url('./background.jpg'); /* Đường dẫn đến hình ảnh của bạn */
+    background-size: cover; /* Làm cho hình ảnh bao phủ toàn bộ phần tử */
+    background-position: center; /* Căn giữa hình ảnh trong phần tử */
+    background-repeat: no-repeat; /* Ngăn không cho hình ảnh lặp lại */
+    height: 100vh; /* Đảm bảo body chiếm toàn bộ chiều cao của viewport */
+    margin: 0; /* Gỡ bỏ margin mặc định */
+}
