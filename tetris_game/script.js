@@ -19,9 +19,9 @@ const gameEdgeRight = 410;
 const colors = ["#dca3ff", "#ff90a0", "#80ffb4", "#ff7666", "#70b3f5", "#b2e77d", "#ffd700"];
 let generatedNumbers = [];
 
-const dropSound = new Audio('sounds/kk.wav');
-const clearSound = new Audio('sounds/cl.mp3');
-
+const dropSound = new Audio('sounds/click.wav'); // Sử dụng đường dẫn không có khoảng trắng
+const clearSound = new Audio('sounds/win.wav');
+const button = new Audio('sounds/kk2.wav');
 function generateRandomUniqueNumber(min, max) {
     let number;
     do {
@@ -41,18 +41,18 @@ function setup() {
     fallingPiece = new PlayPiece();
     fallingPiece.resetPiece();
     textFont('Press Start 2P');
+
+    // Thêm sự kiện tải âm thanh
     dropSound.addEventListener('canplaythrough', event => {
         console.log('Drop sound loaded successfully.');
     });
+
     clearSound.addEventListener('canplaythrough', event => {
         console.log('Clear sound loaded successfully.');
     });
 }
 
 function draw() {
-    background("#000");
-    fallingPiece.showShadow();
-    fallingPiece.show();
     const colorDark = "#0d0d0d";
     const colorLight = "#fff";
     const colorGold = "#e6ce78";
@@ -125,7 +125,7 @@ function draw() {
     stroke(colorBoder);
     strokeWeight(15);
     noFill();
-    rect(0, 0, width, height);
+    rect(0, 0, width, height+5);
 }
 
 function keyPressed() {
@@ -134,11 +134,14 @@ function keyPressed() {
     }
     if (!pauseGame) {
         if (keyCode === LEFT_ARROW) {
+            button.play();
             fallingPiece.input(LEFT_ARROW);
         } else if (keyCode === RIGHT_ARROW) {
+            button.play();
             fallingPiece.input(RIGHT_ARROW);
         }
         if (keyCode === UP_ARROW) {
+            button.play();
             fallingPiece.input(UP_ARROW);
         }
     }
@@ -146,6 +149,7 @@ function keyPressed() {
 
 function leftGame() {
     if (!pauseGame) {
+
         fallingPiece.input(LEFT_ARROW);
     }
 }
@@ -165,6 +169,7 @@ function upGame() {
 function downGame() {
     if (!pauseGame) {
         fallingPiece.fall(fallSpeed * 1);
+        button.play();
     } else {
         updateEvery = updateEveryCurrent;
     }
@@ -287,6 +292,7 @@ class PlayPiece {
         }
     }
 
+
     fall(amount) {
         if (!this.futureCollision(0, amount, this.rotation)) {
             this.addPos(0, amount);
@@ -357,7 +363,7 @@ class PlayPiece {
                 xx = this.pieces[i].pos.x + x;
                 yy = this.pieces[i].pos.y + y;
             }
-            if (xx < gameEdgeLeft || xx + gridSpace > gameEdgeRight || yy + gridSpace >= height - 1) {
+            if (xx < gameEdgeLeft || xx + gridSpace > gameEdgeRight || yy + gridSpace > height) {
                 return true;
             }
             for (let j = 0; j < gridPieces.length; j++) {
@@ -371,7 +377,6 @@ class PlayPiece {
                 }
             }
         }
-        return false;
     }
 
     input(key) {
@@ -456,11 +461,13 @@ class PlayPiece {
         const randomNumber1 = generateRandomUniqueNumber(0, 1000);
         addVocabulary2(randomNumber1, randomNumber1);
         speakText(Englishvoca[randomNumber1 % Englishvoca.length]);
+        pauseGame = true ;
         setTimeout(function () {
             speakText2(KoreanVoca[randomNumber1 % KoreanVoca.length]);
         }, 2000);
         setTimeout(function () {
             startGame();
+            pauseGame = false ;
         }, 3000);
         this.resetPiece();
         analyzeGrid();
@@ -475,27 +482,30 @@ class Square {
 
     show() {
         const baseColor = color(colors[this.type]);
-        const outerColor = lerpColor(baseColor, color(0, 0, 0), 0.4); 
-        const centerColor = lerpColor(baseColor, color(255, 255, 255), 0.05);
-
-        // Vẽ ô vuông với màu viền ngoài mờ
-        fill(outerColor);
-        stroke(255); // Viền trắng
-        strokeWeight(0.8); // Độ dày viền
+        const outerColor = lerpColor(baseColor, color(0, 0, 0), 0.05);
+        const centerColor = lerpColor(baseColor, color(255, 255, 255), 0.18);
+        fill(255);
+        noStroke();
         rect(this.pos.x, this.pos.y, gridSpace, gridSpace);
-
-        // Hiệu ứng gradient cho viền ngoài
         for (let i = 1; i <= 10; i++) {
-            let interpColor = lerpColor(outerColor, baseColor, i * 0.2);
+            let interpColor = lerpColor(outerColor, baseColor, i * 0.1);
             fill(interpColor);
             noStroke();
             rect(this.pos.x + i, this.pos.y + i, gridSpace - 2 * i, gridSpace - 2 * i);
         }
-
-        // Vẽ màu trung tâm sáng hơn
         fill(centerColor);
         noStroke();
         rect(this.pos.x + 5, this.pos.y + 5, gridSpace - 10, gridSpace - 10);
+        for (let i = 1; i <= 5; i++) {
+            let interpCenterColor = lerpColor(centerColor, baseColor, i * 0.2);
+            fill(interpCenterColor);
+            noStroke();
+            rect(this.pos.x + 6 + i, this.pos.y + 6 + i, gridSpace - 12 - 2 * i, gridSpace - 12 - 2 * i);
+        }
+        stroke(lerpColor(centerColor, color(255, 255, 255), 0.2));
+        strokeWeight(0.3);
+        line(this.pos.x + 6, this.pos.y + 6, this.pos.x + gridSpace - 6, this.pos.y + gridSpace - 6);
+        line(this.pos.x + 6, this.pos.y + gridSpace - 6, this.pos.x + gridSpace - 6, this.pos.y + 6);
     }
 }
 
@@ -517,7 +527,7 @@ function analyzeGrid() {
                 updateEveryCurrent -= 10;
             }
         }
-        clearSound.play();
+        clearSound.play(); // Chơi âm thanh khi một hàng được xóa
     }
     if (score > 100) {
         score *= 2;
@@ -556,7 +566,7 @@ class Worker {
     work() {
         if (this.amountActual < this.amountTotal) {
             for (let j = 0; j < gridPieces.length; j++) {
-                if (gridPieces[j].pos.y < this.yVal) {
+                if (gridPieces[j].pos.y < y) {
                     gridPieces[j].pos.y += 5;
                 }
             }
